@@ -30,11 +30,25 @@ LICENSE file.
   <packaging>jar</packaging>
 
   <dependencies>
+        <!--  
     <dependency>
       <groupId>org.rocksdb</groupId>
       <artifactId>rocksdbjni</artifactId>
       <version>${rocksdb.version}</version>
     </dependency>
+        -->
+
+    <!--- 自定义rocksdb jni -->
+    <dependency>
+        <groupId>com.example</groupId>
+        <artifactId>rocksdbjni</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>/home/yanghy/rocksdb/java/target/rocksdbjni-7.6.0-linux64.jar</systemPath>
+    </dependency>
+
+
+
     <dependency>
       <groupId>site.ycsb</groupId>
       <artifactId>core</artifactId>
